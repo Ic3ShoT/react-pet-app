@@ -8,7 +8,7 @@ class App extends React.Component  {
         super(props);
         this.state = {
             helpText: "Help text",
-            userData: ''
+            userData: '0'
         }
 
         this.inputClick = this.inputClick.bind(this)

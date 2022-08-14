@@ -18,6 +18,14 @@ class Users extends React.Component {
             age: 81,
             isHappy: false,
         },
+        {
+            id: 3,
+            firstname: 'Timur',
+            lastname: 'Khalim',
+            bio: 'im cool',
+            age: 82,
+            isHappy: true,
+        },
     ];
 
     render() {

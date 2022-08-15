@@ -1,42 +1,13 @@
 import React from "react";
+import User from "./user";
 
 class Users extends React.Component {
-    users = [
-        {
-            id: 1,
-            firstname: 'Ian',
-            lastname: 'Iankow',
-            bio: 'loren lore wnlore2n lor enloren lorenlor enlore nloren',
-            age: 27,
-            isHappy: true,
-        },
-        {
-            id: 2,
-            firstname: 'Neil',
-            lastname: 'Young',
-            bio: 'loren lore wnloren lor enloren lorenlor enlore nloren',
-            age: 81,
-            isHappy: false,
-        },
-        {
-            id: 3,
-            firstname: 'Timur',
-            lastname: 'Khalim',
-            bio: 'im cool',
-            age: 82,
-            isHappy: true,
-        },
-    ];
-
     render() {
-        if(this.users.length > 0){
+        if(this.props.users.length > 0){
             return (
                 <div>
-                    {this.users.map((element) => (<div className="user" key={element.id}>
-                            <h3>{element.firstname} {element.lastname}</h3>
-                            <p>{element.bio}</p>
-                            <b>{element.isHappy ? 'Счастлив)' : 'не счастлив(('}</b>
-                        </div>
+                    {this.props.users.map((element) => (
+                        <User  key={element.id} user={element}/>
                     ))}
                 </div>
             );
@@ -48,7 +19,6 @@ class Users extends React.Component {
                 </div>
             );
         }
-
     };
 
 }

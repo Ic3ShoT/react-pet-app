@@ -42,7 +42,7 @@ main .delete-icon {
     transform: scale(2);
 }
 
-main .edit-icon {
+main .edit-item {
     float: right;
     margin-right: 25px;
     color: #165664;

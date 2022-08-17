@@ -7,7 +7,7 @@ class Users extends React.Component {
             return (
                 <div>
                     {this.props.users.map((element) => (
-                        <User  key={element.id} user={element}/>
+                        <User onDelete={this.props.onDelete} key={element.id} user={element}/>
                     ))}
                 </div>
             );

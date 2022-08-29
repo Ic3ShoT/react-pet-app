@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: darkslategrey;
+    background-color: mediumpurple;
     color: white;
     font-family: sans-serif;
     font-weight: 300;
@@ -31,14 +31,14 @@ aside {
 
 main .user {
     margin-bottom: 50px;
-    background-color: #3e8fa0;
+    background-color: rebeccapurple;
     padding: 20px;
     max-width: 30rem;
 }
 
 main .delete-icon {
     float: right;
-    color: #134b57;
+    color: purple;
     cursor: pointer;
     transform: scale(2);
 }
@@ -46,7 +46,7 @@ main .delete-icon {
 main .edit-item {
     float: right;
     margin-right: 25px;
-    color: #165664;
+    color: purple;
     cursor: pointer;
     transform: scale(2);
 }
@@ -91,7 +91,7 @@ form button:hover {
 .user form input,
 .user form textarea,
 .user form button {
-    background: #134b57;
+    background: purple;
 }
 
 .user form button:hover {
